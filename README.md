@@ -94,10 +94,16 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
    **B. Working with a New Package:**
 
-   i. Create a new Package by providing the super package name, package name and description.![image](./assets/project-5.png)
-   ii. Configuring Transport Requests
+   i. Create a new Package by providing the super package name, package name and description.
+
+   ![image](./assets/project-5.png)
+
+   ii. Configuring Transport Requests:
+
    a. Use Existing Transport Request: Select an existing transport request (TR) from the dropdown.
+
    ![image](./assets/project-6.png)
+
    b. Or Create a New Transport Request: create a new transport request by entering a description.
 
 4. **Proceed to ABAP Project Creation:**
@@ -106,25 +112,43 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 5. **Post successful creation open the project in Eclipse.**
 
-   i. Allow browser to open eclipse. ![image](./assets/project-8.png)
+   i. Allow browser to open eclipse.
 
-   ii. Create a new project from the link. ![image](./assets/project-9.png)
+   ![image](./assets/project-8.png)
 
-   iii. Click on Next. ![image](./assets/project-10.png)
+   ii. Create a new project from the link.
 
-   iv. Logon using test user through browser and close the new tab once done. ![image](./assets/project-11.png) ![image](./assets/project-12.png)
+   ![image](./assets/project-9.png)
 
-   v. Finish with the creation ![image](./assets/project-13.png)
+   iii. Click on Next.
+
+   ![image](./assets/project-10.png)
+
+   iv. Logon using test user through browser and close the new tab once done.
+
+   ![image](./assets/project-11.png)
+
+   ![image](./assets/project-12.png)
+
+   v. Finish with the creation
+
+   ![image](./assets/project-13.png)
 
 ### Exercise 2: Generating and Using Service Bindings
 
 1. **Create a New ABAP Object:** Use the Repository Object Generator Wizard to create a new OData UI service for your ABAP object.
 
-   i. Browse existing objects.![image](./assets/fiori-1.png)
+   i. Browse existing objects.
 
-   ii. Search for “ZTRAVEL” and then chose the object accordingly as per your user, example for Tester01 select ZTRAVEL01 and press OK.![image](./assets/fiori-2.png)
+   ![image](./assets/fiori-1.png)
 
-   iii. Press Next.![image](./assets/fiori-3.png)
+   ii. Search for “ZTRAVEL” and then chose the object accordingly as per your user, example for Tester01 select ZTRAVEL01 and press OK.
+
+   ![image](./assets/fiori-2.png)
+
+   iii. Press Next.
+
+   ![image](./assets/fiori-3.png)
 
    iv. Once the packages are validated press Next on the screen.
 
@@ -136,17 +160,27 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
    viii. Click Finish and wait for artifacts to generate.
 
-   ix. Publish the artifacts.![image](./assets/fiori-7a.png)
+   ix. Publish the artifacts.
 
-   x. Preview the Fiori Application.![image](./assets/fiori-7b.png)
+   ![image](./assets/fiori-7a.png)
+
+   x. Preview the Fiori Application.
+
+   ![image](./assets/fiori-7b.png)
 
 2. **Create a Fiori Project:** Link Business Application Studio to your project
 
-   i. Create a Fiori dev space for yourself [here](https://spa-us10-nwjsondh.us10cf.applicationstudio.cloud.sap/index.html?externalRedirect=true).![image](./assets/fiori-4.png)
+   i. Create a Fiori dev space for yourself [here](https://spa-us10-nwjsondh.us10cf.applicationstudio.cloud.sap/index.html?externalRedirect=true).
 
-   ii. You would need the dev space id of the newly created dev space to complete the next steps.![image](./assets/fiori-5.png)
+   ![image](./assets/fiori-4.png)
 
-   iii. Go back to eclipse and open project properties.![image](./assets/fiori-6.png)
+   ii. You would need the dev space id of the newly created dev space to complete the next steps.
+
+   ![image](./assets/fiori-5.png)
+
+   iii. Go back to eclipse and open project properties.
+
+   ![image](./assets/fiori-6.png)
 
    iv. Use the below details and link the dev space under “ABAP Development Tools” -> “External IDE Configuration” -> “Configure External IDE” -> “SAP Business Application Studio”
 
@@ -156,17 +190,27 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
    v. Click on Apply and Close.
 
-   vi. Select the newly published entity and select Create Fiori Project.![image](./assets/fiori-7b.png)
+   vi. Select the newly published entity and select Create Fiori Project.
 
-   vii. Select the “List Report Page” as the template.![image](./assets/fiori-8.png)
+   ![image](./assets/fiori-7b.png)
+
+   vii. Select the “List Report Page” as the template.
+
+   ![image](./assets/fiori-8.png)
 
    viii. Review the Entity Selection step and press Next.
 
    ix. Review the project attributes and press Finish. This will generate a Fiori Application. Please wait for the files to be load.
 
-   x. Click on Preview application and select start-mock. This will setup the dependencies and start a mock application.![image](./assets/fiori-9.png)![image](./assets/fiori-10.png)
+   x. Click on Preview application and select start-mock. This will setup the dependencies and start a mock application.
 
-   xi. In the preview app press Go to view mock data.![image](./assets/fiori-11.png)
+   ![image](./assets/fiori-9.png)
+
+   ![image](./assets/fiori-10.png)
+
+   xi. In the preview app press Go to view mock data.
+
+   ![image](./assets/fiori-11.png)
 
 ## Key Takeaways
 
