@@ -37,31 +37,6 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 ## Environment Setup
 
-<!-- Note: Can be skipped
-
-**Step 1: Subscribing to SAP Build**
-
-1. Log into your SAP BTP Cockpit.
-2. Navigate to Subscriptions and select SAP Build.
-3. Follow the steps to activate the subscription.
-
-**Step 2: Setting Up Destinations**
-
-1. Navigate to Connectivity > Destinations in SAP BTP.
-2. Create a destination with the following properties:
-
-- Name: ABAP_System
-- Type: HTTP
-- URL: <Your ABAP System URL>
-- Authentication: SAMLAssertion
-
-3. Test the connection to ensure it's active.
-
-**Step 3: Configuring Communication Systems**
-
-1. Download your BTP subaccount's trust certificate.
-2. Configure the communication system in the ABAP environment using the Communication Systems app. -->
-
 **SAP Build system with access to Build Code, Build Apps and Build Process Automation is already available:** [Link](https://spa-us10-nwjsondh.us10.build.cloud.sap)
 
 ## Hands-On Exercises
@@ -86,29 +61,25 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 3. **Package Selection:**
 
-   You can either use the existing packages per user : `ZTESTER01`, `ZTESTER02` … or create a new package under these as super packages. Ensure that the new package name starts with **Z**.
+   You can create a new package under **ZSAP_BUILD_DAY** as super packages. Ensure that the new package name starts with **Z**.
 
-   **A. Working with an Existing Package:**
-
-   ![image](./assets/project-4.png)
-
-   **B. Working with a New Package:**
+   **Working with a New Package:**
 
    i. Create a new Package by providing the super package name, package name and description.
 
-   ![image](./assets/project-5.png)
+   ![image](./assets/project-4.png)
 
    ii. Configuring Transport Requests:
 
    a. Use Existing Transport Request: Select an existing transport request (TR) from the dropdown.
 
-   ![image](./assets/project-6.png)
-
    b. Or Create a New Transport Request: create a new transport request by entering a description.
+
+   ![image](./assets/project-5.png)
 
 4. **Proceed to ABAP Project Creation:**
 
-   ![image](./assets/project-7.png)
+   ![image](./assets/project-6.png)
 
 5. **Post successful creation open the project in Eclipse.**
 
@@ -134,39 +105,74 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
    ![image](./assets/project-13.png)
 
+6. **Copy the template content into your package.**
+   i. Close the RAP Wizard.
+
+   ![image](./assets/project-14.png)
+
+   ii. You will see your newly created package.
+
+   ![image](./assets/project-15a.png)
+
+   iii. Expand the package **ZTEMPLATE_CONTENT** and copy the database table `ZTRAVEL_XXX` into your package. Remember to replace the `XXX` with a number assigned to your user to avoid conflicts.
+
+   ![image](./assets/project-15b.png)
+
+   ![image](./assets/project-15c.png)
+
+   ![image](./assets/project-15d.png)
+
+   ![image](./assets/project-15e.png)
+
+   iv. Activate your newly created database table.
+
+   ![image](./assets/project-15f.png)
+
+   v. Now copy the data generator class `ZTRAVEL_DATA_GEN_XXX` into your package. Remember to replace the `XXX` with a number assigned to your user to avoid conflicts.
+
+   ![image](./assets/project-16a.png)
+
+   ![image](./assets/project-16b.png)
+
+   ![image](./assets/project-16c.png)
+
+   vi. Update the table name in the newly copied data generator class to point to the table you have created.
+
+   ![image](./assets/project-16d.png)
+
 ### Exercise 2: Generating and Using Service Bindings
 
 1. **Create a New ABAP Object:** Use the Repository Object Generator Wizard to create a new OData UI service for your ABAP object.
 
-   i. Browse existing objects.
+   i. Select your new table and right click. Select `Generate ABAP Repository Objects` to open the RAP Wizard. Then select `ODATA UI Service`.
 
-   ![image](./assets/fiori-1.png)
+   ![image](./assets/project-17a.png)
 
-   ii. Search for “ZTRAVEL” and then chose the object accordingly as per your user, example for Tester01 select ZTRAVEL01 and press OK.
+   ![image](./assets/project-17b.png)
 
-   ![image](./assets/fiori-2.png)
+   ii. Search for your package and then chose the object accordingly and press Next.
+
+   ![image](./assets/project-17c.png)
 
    iii. Press Next.
 
-   ![image](./assets/fiori-3.png)
+   ![image](./assets/project-17d.png)
 
-   iv. Once the packages are validated press Next on the screen.
+   iv. Review the list of repository objects that are going to be generated and press Next again.
 
-   v. Validate the general details and press Next again.
+   ![image](./assets/project-17e.png)
 
-   vi. Review the list of repository objects that are going to be generated and press Next again.
+   v. Select a transport request from the list or browse for existing requests from under the “Enter a request number” and select the “CEI Workshop" request. You can also create a new request.
 
-   vii. Select a transport request from the list or browse for existing requests from under the “Enter a request number” and select the “CEI Workshop" request. You can also create a new request.
+   ![image](./assets/project-17f.png)
 
-   viii. Click Finish and wait for artifacts to generate.
+   vi. Click Finish and wait for artifacts to generate.
 
-   ix. Publish the artifacts.
+   vii. Publish the artifacts.
 
-   ![image](./assets/fiori-7a.png)
+   ![image](./assets/project-18.png)
 
-   x. Preview the Fiori Application.
-
-   ![image](./assets/fiori-7b.png)
+   viii. Preview the Fiori Application.
 
 2. **Create a Fiori Project:** Link Business Application Studio to your project
 
