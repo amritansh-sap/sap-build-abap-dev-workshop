@@ -114,7 +114,7 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
    ![image](./assets/project-15a.png)
 
-   iii. Expand the package **ZTEMPLATE_CONTENT** and copy the database table `ZTRAVEL_XXX` into your package. Remember to replace the `XXX` with a number assigned to your user to avoid conflicts.
+   iii. Expand the package **ZTRAVEL_REF_CONTENT** and copy the database table `ZTRAVEL_BOOKING` into your package. Remember to append the `X` with a number assigned to your user to avoid conflicts at the end of the table name.
 
    ![image](./assets/project-15b.png)
 
@@ -139,6 +139,10 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
    vi. Update the table name in the newly copied data generator class to point to the table you have created.
 
    ![image](./assets/project-16d.png)
+
+   vii. Activate the class and after activation execute.
+
+   ![image](./assets/project-16e.png)
 
 ### Exercise 2: Generating and Using Service Bindings
 
