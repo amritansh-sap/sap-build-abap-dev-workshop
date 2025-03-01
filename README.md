@@ -61,7 +61,7 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 3. **Package Selection:**
 
-   You can create a new package under **ZSAP_BUILD_DAY** as super packages. Ensure that the new package name starts with **Z**.
+   You can create a new package under **ZSIT_HANDSON** as super packages. Ensure that the new package name starts with **Z**.
 
    **Working with a New Package:**
 
