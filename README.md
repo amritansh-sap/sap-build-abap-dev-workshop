@@ -53,7 +53,9 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
    ![image](./assets/project-2.png)
 
-   ![image](./assets/project-3.png)
+   ![image](./assets/project-3a.png)
+
+   ![image](./assets/project-3b.png)
 
 2. **Select System:**
 
@@ -61,7 +63,7 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 3. **Package Selection:**
 
-   You can create a new package under **ZSIT_HANDSON** as super packages. Ensure that the new package name starts with **Z**.
+   You can create a new package under **ZBLR_SIT_JUNE** as super package. Ensure that the new package name starts with **Z**.
 
    **Working with a New Package:**
 
@@ -79,7 +81,8 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
 4. **Proceed to ABAP Project Creation:**
 
-   ![image](./assets/project-6.png)
+   ![image](./assets/project-6a.png)
+   ![image](./assets/project-6b.png)
 
 5. **Post successful creation open the project in Eclipse.**
 
