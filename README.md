@@ -71,13 +71,6 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
    ![image](./assets/project-4.png)
 
-   ii. Configuring Transport Requests:
-
-   a. Use Existing Transport Request: Select an existing transport request (TR) from the dropdown.
-
-   b. Or Create a New Transport Request: create a new transport request by entering a description.
-
-   ![image](./assets/project-5.png)
 
 4. **Proceed to ABAP Project Creation:**
 
