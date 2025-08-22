@@ -169,13 +169,19 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
 
    vi. Click Finish and wait for artifacts to generate.
 
+       Once artifacts are generated, open the generated Root view entity and add the Large Object Annotations above the attachment field.
+          @Semantics.largeObject:
+              { mimeType: 'MimeType',
+              fileName: 'Filename',
+              contentDispositionPreference: #INLINE }
+
    vii. Publish the artifacts.
 
    ![image](./assets/project-18.png)
 
    viii. Preview the Fiori Application.
 
-2. **Create a Fiori Project:** Link Business Application Studio to your project
+3. **Create a Fiori Project:** Link Business Application Studio to your project
 
    i. Create a Fiori dev space for yourself [here](https://spa-us10-nwjsondh.us10cf.applicationstudio.cloud.sap/index.html?externalRedirect=true).
 
