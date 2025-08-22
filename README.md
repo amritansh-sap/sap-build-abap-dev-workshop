@@ -111,6 +111,7 @@ Welcome to this hands-on session on integrating ABAP with SAP Build. This guide 
    ![image](./assets/project-15a.png)
 
    iii. Expand the package **ZTRAVEL_REF_CONTENT** and copy the database table `ZTRAVEL_BOOKING` into your package. Remember to append the `X` with a number assigned to your user to avoid conflicts at the end of the table name.
+         Update the table name in annotation @Semantics.amount.currencyCode with the new table name created.
 
    ![image](./assets/project-15b.png)
 
